@@ -1,11 +1,11 @@
 {
-  "name": "heimdall-service",
-  "version": "1.1.0",
-  "description": "Service for common dashboard",
+  "name": "node",
+  "version": "1.0.0",
+  "description": "boilerpate for node",
   "main": "index.js",
   "scripts": {
     "test": "mocha --timeout 25000",
-    "build": "babel app -d ./dist/app/ && babel scripts -d ./dist/scripts/ && babel config -d ./dist/config/ && babel db -d ./dist/db && babel lib -d ./dist/lib && babel index.js routes.js server.js middleWare.js -d ./dist && cp package.json ./dist && cp package-lock.json ./dist",
+    "build": "babel app -d ./dist/app/ && babel config -d ./dist/config/ && babel db -d ./dist/db && babel lib -d ./dist/lib && babel index.js routes.js server.js middleWare.js -d ./dist && cp package.json ./dist && cp package-lock.json ./dist",
     "local": "babel-watch index.js",
     "staging": "nodemon dist/index.js",
     "script": "babel-watch scripts/query.js"
